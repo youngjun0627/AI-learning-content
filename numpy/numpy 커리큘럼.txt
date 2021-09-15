@@ -1,0 +1,89 @@
+introduce numpy
+
+1. 넘파이 장점 및 간단한 소개
+2. 간단한 numpy 행렬 생성
+3. numpy 연산 덧셈, for문과 numpy 연산 차이
+4. 2차원 행렬 생성
+5. 1차원 배열 인덱싱
+6. 2차원 배열 인덱싱
+7. logical operation
+8. sum, all, any, dot 메소드들 사용
+
+statistics with numpy
+
+1. plt소개 및 간단한 plot
+2. csv 읽기
+3. csv 쓰기
+4. csv -> numpy로 변환
+5. csv -> numpy -> plot
+
+Image processing with numpy
+
+1. opencv를 이용해서 이미지 읽기
+2. 이미지 -> numpy 변환
+3. numpy random을 이용하여 노이즈 추가
+4. convolution 함수를 통해서 노이즈 제거(conv 익히기)
+5. padding 구현
+6. SVD를 통해 이미지 고유 특징만 뽑아서 재현
+
+Numpy for deep learning
+
+1. SLP 구현
+2. feed forward 구현
+3. backpropagation 구현
+4. 모델 학습
+
+====================================
+
+format
+codeacademy 처럼
+jupyter 시험 방식
+
+인공지능
+넘파이, 판다스, 영상
+
+실습
+동영상보고 따라하기
+colab 링크 드리고 따라하기
+저희 플랫폼은 사용을 잘 안한다.
+기존에 있는것을 우리의 주피터로 옮기는 것이 좋다
+
+로컬에서 할지 포팅에서 할지 고려
+
+기존에 있는 걸 수정하거나 추가하는 것을 추천
+
+이미지 처리, MLP, GAN 등 스펙트럼이 넓다(맛보기 형식으로 되어있음)
+양이 많아서 맛보기형식으로 되어있음
+
+pytorch에 대해서 구체적으로 커리큘럼을 짜줬으면 좋겠다.
+
+
+idea:
+1. 준비되어있는 실습들을 플랫폿에 탑재할 수 있는지 학인
+2. 앞으로 만들 시스템의 방향성
+3. 과제 결과물의 판별을 자동적으로
+
+CPU로만 충분히 할 수 있는 학습컨텐츠 제작하면 좋을 듯
+문과생들이 많은점을 고려했으면 좋겠다
+
+
+코스의 특수성의 기인하면
+넘파이 프로그래밍을 할 줄 아는 사람들을 대상으로 하는게 아닌 사람들이 많다.
+완전 쌩초보자들을 대상으로 생각해야된다.
+자세하고 구체적으로 친절하게 설명을 해야된다.
+
+
+import unittest
+import numpy as np
+class MyTest(unittest.TestCase):
+    @staticmethod
+    def test_succeeding():
+        a = solution(10)
+        np.testing.assert_almost_equal(a.shape, (5,5))
+
+[1, 2, 3, 4, 5], [3, 4, 5, 6, 7], "+"
+[4, 6, 8, 10, 12]
+
+[10, 14, 9, 9, 15, 11, 23, 26, 41, 25, 12, 15, 13, 3, 17, 7]
+[[9, 9, 3, 7], [23, 26, 41, 25, 17], [10, 14, 15, 11, 12, 15, 13], [0, 0, 0, 0, 15, 0, 23, 26, 41, 25, 0, 15, 0, 0, 17, 0], [0, 0, 0, 0, 225, 0, 529, 676, 1681, 625, 0, 225, 0, 0, 289, 0]]
+
